@@ -1,0 +1,12 @@
+{
+  "name": "photoalbum",
+  "private": true,
+  "scripts": {
+    "convert-heic": "node scripts/convert-heic.js",
+    "deploy:firebase": "powershell -ExecutionPolicy Bypass -File scripts/deploy-firebase.ps1"
+  },
+  "devDependencies": {
+    "heic-convert": "^2.1.0",
+    "image-size": "^1.2.0"
+  }
+}
