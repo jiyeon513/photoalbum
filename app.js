@@ -1,16 +1,9 @@
-const SCROLL_AMOUNT = 130;
-
-document.querySelectorAll(".nav-btn").forEach((btn) => {
+document.querySelectorAll(".book-cover, .envelope-cover").forEach((btn) => {
   btn.addEventListener("click", () => {
-    const targetId = btn.dataset.target;
-    const row = document.getElementById(targetId);
-    if (!row) return;
-
-    const direction = btn.classList.contains("next") ? 1 : -1;
-    row.scrollBy({ left: SCROLL_AMOUNT * direction, behavior: "smooth" });
+    const title =
+      btn.querySelector(".book-title")?.textContent ??
+      btn.querySelector(".envelope-title")?.textContent ??
+      "앨범";
+    console.log(`"${title}" 앨범을 엽니다.`);
   });
-});
-
-document.querySelector(".fab").addEventListener("click", () => {
-  alert("Add Books 기능은 준비 중입니다.");
 });

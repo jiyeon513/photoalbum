@@ -3,172 +3,86 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Favourite BOOKS</title>
+  <title>가족 앨범</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="app">
-    <header class="header">
-      <p class="header-subtitle">My Favourite</p>
-      <h1 class="header-title">BOOKS</h1>
-    </header>
+    <main class="album-grid">
+      <div class="shelves">
+        <section class="shelf-row">
+          <div class="books">
+            <article class="book">
+              <button class="book-cover" type="button" style="--cover-bg: #94999e;">
+                <div class="book-text">
+                  <span class="book-title">여름 휴가</span>
+                </div>
+                <div class="book-icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="14" fill="#f4b942"/><path d="M24 6v6M24 36v6M6 24h6M36 24h6M10.5 10.5l4.2 4.2M33.3 33.3l4.2 4.2M10.5 37.5l4.2-4.2M33.3 14.7l4.2-4.2" stroke="#f4b942" stroke-width="3" stroke-linecap="round"/></svg>
+                </div>
+                <div class="book-logo" aria-hidden="true"></div>
+              </button>
+            </article>
+            <article class="book">
+              <button class="book-cover" type="button" style="--cover-bg: #9aab6e;">
+                <div class="book-text">
+                  <span class="book-title">봄 나들이</span>
+                </div>
+                <div class="book-icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="22" r="8" fill="#e85d5d"/><circle cx="16" cy="30" r="6" fill="#e85d5d"/><circle cx="32" cy="30" r="6" fill="#e85d5d"/><rect x="22" y="30" width="4" height="14" rx="2" fill="#5a8a3c"/></svg>
+                </div>
+                <div class="book-logo" aria-hidden="true"></div>
+              </button>
+            </article>
+          </div>
+          <div class="shelf-bar"></div>
+        </section>
 
-    <main class="categories">
-      <section class="category" data-accent="orange">
-        <div class="category-header">
-          <h2 class="category-name">Design</h2>
-          <div class="category-controls">
-            <span class="book-count">18 books</span>
-            <button class="nav-btn prev" aria-label="이전 책" data-target="design-scroll">
-              <svg width="8" height="12" viewBox="0 0 8 12" fill="none"><path d="M6.5 1L1.5 6L6.5 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </button>
-            <button class="nav-btn next" aria-label="다음 책" data-target="design-scroll">
-              <svg width="8" height="12" viewBox="0 0 8 12" fill="none"><path d="M1.5 1L6.5 6L1.5 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </button>
-          </div>
-        </div>
-        <div class="shelf">
-          <div class="shelf-strip"></div>
-          <div class="book-row" id="design-scroll">
-            <article class="book" style="--cover-bg: linear-gradient(160deg, #1a4d3a 0%, #2d6b4f 100%);">
-              <div class="book-cover">
-                <span class="book-title">Bauhaus</span>
-                <span class="book-author">Magdalena Droste</span>
-              </div>
+        <section class="shelf-row">
+          <div class="books">
+            <article class="book">
+              <button class="book-cover" type="button" style="--cover-bg: #9a8bb0;">
+                <div class="book-text">
+                  <span class="book-title">아이들</span>
+                </div>
+                <div class="book-icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="14" r="7" fill="#f4d03f"/><path d="M12 40c0-8 5-12 12-12s12 4 12 12" fill="#f4d03f"/></svg>
+                </div>
+                <div class="book-logo" aria-hidden="true"></div>
+              </button>
             </article>
-            <article class="book" style="--cover-bg: linear-gradient(160deg, #e8e4df 0%, #c8c4be 100%); --text-color: #333;">
-              <div class="book-cover">
-                <span class="book-title">Dieter<br/>Rams</span>
-                <span class="book-author">Klaus Klemp</span>
-              </div>
-            </article>
-            <article class="book" style="--cover-bg: linear-gradient(160deg, #f5c842 0%, #e8a820 100%); --text-color: #1a1a1a;">
-              <div class="book-cover">
-                <span class="book-title">The Design of Everyday Things</span>
-                <span class="book-author">Don Norman</span>
-              </div>
-            </article>
-            <article class="book" style="--cover-bg: linear-gradient(160deg, #1a5c3a 0%, #0d3d24 100%);">
-              <div class="book-cover">
-                <span class="book-title">Graphic<br/>Design</span>
-                <span class="book-author">History</span>
-              </div>
-            </article>
-            <article class="book" style="--cover-bg: linear-gradient(160deg, #f0d060 0%, #d4a830 100%); --text-color: #1a1a1a;">
-              <div class="book-cover">
-                <span class="book-title">WORK</span>
-                <span class="book-author">Design Studio</span>
-              </div>
-            </article>
-            <article class="book" style="--cover-bg: linear-gradient(160deg, #2c3e50 0%, #1a252f 100%);">
-              <div class="book-cover">
-                <span class="book-title">Grid<br/>Systems</span>
-                <span class="book-author">Josef Müller</span>
-              </div>
+            <article class="book">
+              <button class="book-cover" type="button" style="--cover-bg: #7ec8e0;">
+                <div class="book-text">
+                  <span class="book-title">생일 파티</span>
+                </div>
+                <div class="book-icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48" fill="none"><rect x="10" y="28" width="28" height="10" rx="3" fill="#f4d03f"/><rect x="14" y="20" width="20" height="10" rx="2" fill="#f4d03f"/><path d="M24 10v10" stroke="#f4d03f" stroke-width="3" stroke-linecap="round"/><circle cx="24" cy="8" r="3" fill="#ff8fab"/></svg>
+                </div>
+                <div class="book-logo" aria-hidden="true"></div>
+              </button>
             </article>
           </div>
-        </div>
-      </section>
+          <div class="shelf-bar"></div>
+        </section>
 
-      <section class="category" data-accent="blue">
-        <div class="category-header">
-          <h2 class="category-name">Psychology</h2>
-          <div class="category-controls">
-            <span class="book-count">12 books</span>
-            <button class="nav-btn prev" aria-label="이전 책" data-target="psychology-scroll">
-              <svg width="8" height="12" viewBox="0 0 8 12" fill="none"><path d="M6.5 1L1.5 6L6.5 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </button>
-            <button class="nav-btn next" aria-label="다음 책" data-target="psychology-scroll">
-              <svg width="8" height="12" viewBox="0 0 8 12" fill="none"><path d="M1.5 1L6.5 6L1.5 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </button>
-          </div>
-        </div>
-        <div class="shelf">
-          <div class="shelf-strip"></div>
-          <div class="book-row" id="psychology-scroll">
-            <article class="book" style="--cover-bg: linear-gradient(160deg, #1a2a4a 0%, #2d4070 100%);">
-              <div class="book-cover">
-                <span class="book-title">Read People<br/>Like a Book</span>
-                <span class="book-author">Patrick King</span>
-              </div>
-            </article>
-            <article class="book" style="--cover-bg: linear-gradient(160deg, #4a2060 0%, #6b3080 100%);">
-              <div class="book-cover">
-                <span class="book-title">The Power of Your Subconscious Mind</span>
-                <span class="book-author">Joseph Murphy</span>
-              </div>
-            </article>
-            <article class="book" style="--cover-bg: linear-gradient(160deg, #1a3a6a 0%, #2858a0 100%);">
-              <div class="book-cover">
-                <span class="book-title">The Body Keeps the Score</span>
-                <span class="book-author">Bessel van der Kolk</span>
-              </div>
-            </article>
-            <article class="book" style="--cover-bg: linear-gradient(160deg, #f5f0e8 0%, #e0d8cc 100%); --text-color: #1a1a1a;">
-              <div class="book-cover">
-                <span class="book-title">Atomic<br/>Habits</span>
-                <span class="book-author">James Clear</span>
-              </div>
-            </article>
-            <article class="book" style="--cover-bg: linear-gradient(160deg, #2a1a4a 0%, #4a2a70 100%);">
-              <div class="book-cover">
-                <span class="book-title">Thinking,<br/>Fast and Slow</span>
-                <span class="book-author">Daniel Kahneman</span>
-              </div>
+        <section class="shelf-row shelf-row--envelope">
+          <div class="books books--envelope">
+            <article class="envelope">
+              <button class="envelope-cover" type="button">
+                <div class="envelope-flap" aria-hidden="true"></div>
+                <div class="envelope-fold-left" aria-hidden="true"></div>
+                <div class="envelope-fold-right" aria-hidden="true"></div>
+                <span class="envelope-title">카드</span>
+              </button>
             </article>
           </div>
-        </div>
-      </section>
-
-      <section class="category category--faded" data-accent="green">
-        <div class="category-header">
-          <h2 class="category-name">Novels</h2>
-          <div class="category-controls">
-            <span class="book-count">24 books</span>
-            <button class="nav-btn prev" aria-label="이전 책" data-target="novels-scroll">
-              <svg width="8" height="12" viewBox="0 0 8 12" fill="none"><path d="M6.5 1L1.5 6L6.5 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </button>
-            <button class="nav-btn next" aria-label="다음 책" data-target="novels-scroll">
-              <svg width="8" height="12" viewBox="0 0 8 12" fill="none"><path d="M1.5 1L6.5 6L1.5 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </button>
-          </div>
-        </div>
-        <div class="shelf">
-          <div class="shelf-strip"></div>
-          <div class="book-row" id="novels-scroll">
-            <article class="book" style="--cover-bg: linear-gradient(160deg, #c4a882 0%, #a08060 100%); --text-color: #1a1a1a;">
-              <div class="book-cover">
-                <span class="book-title">The Paper<br/>Palace</span>
-                <span class="book-author">Miranda Cowley</span>
-              </div>
-            </article>
-            <article class="book" style="--cover-bg: linear-gradient(160deg, #f0d850 0%, #d4b830 100%); --text-color: #1a1a1a;">
-              <div class="book-cover">
-                <span class="book-title">The Vanishing Half</span>
-                <span class="book-author">Brit Bennett</span>
-              </div>
-            </article>
-            <article class="book" style="--cover-bg: linear-gradient(160deg, #3a2a1a 0%, #5a4030 100%);">
-              <div class="book-cover">
-                <span class="book-title">Klara and<br/>the Sun</span>
-                <span class="book-author">Kazuo Ishiguro</span>
-              </div>
-            </article>
-            <article class="book" style="--cover-bg: linear-gradient(160deg, #1a3a3a 0%, #2a5a5a 100%);">
-              <div class="book-cover">
-                <span class="book-title">Where the<br/>Crawdads Sing</span>
-                <span class="book-author">Delia Owens</span>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
-
-    <button class="fab" type="button">Add Books</button>
   </div>
 
   <script src="app.js"></script>
